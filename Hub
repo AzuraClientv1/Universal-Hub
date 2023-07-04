@@ -1,0 +1,94 @@
+--Made By darkwastaken.
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Universal Hub", "Midnight")
+ 
+-- TABS/SECTIONS
+local Bedwars = Window:NewTab("Bedwars")
+local Bedwars = Bedwars:NewSection("Bedwars")
+
+local Jailbreak = Window:NewTab("Jailbreak")
+local Jailbreak = Jailbreak:NewSection("Jailbreak")
+
+local PetSimX = Window:NewTab("PetSim X")
+local PetSimX = PetSimX:NewSection("Pet Simulator X")
+
+local Universal = Window:NewTab("Universal")
+local Universal = Universal:NewSection("Universal Scripts")
+--END OF TABS/SECTIONS
+ 
+ 
+ 
+--BEDWARS TAB
+Bedwars:NewButton("VapeV4", "binded to M", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() 
+shared.GuiLibrary["GUIKeybind"] = "M"
+shared.GuiLibrary["GUIKeybind"] = "M"
+end)
+Bedwars:NewButton("Zephyr", "REAL ZEPHYR!?!?"function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeScript1234/ZephyrForRoblox/main/MainScript.lua"))()
+end)
+Bedwars:NewButton("Rektsky", "Rektsky fixed"function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/mainscript.lua"))()
+end)
+Bedwars:NewButton("GrassClient"), "bedwars hack made by GrassConfigs"function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BBIsTheBestLUACoder/GrassClient/main/Script.lua", true))()
+end)
+Bedwars:NewButton("JNHH GamingHub", "bedwars hack mainly for use on mobile."function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\74\78\72\72\71\97\109\105\110\103\49\50\51\47\74\78\45\72\72\45\71\97\109\105\110\103\45\66\101\100\119\97\114\115\45\86\55\47\109\97\105\110\47\74\78\37\50\48\72\72\37\50\48\71\97\109\105\110\103\37\50\48\66\101\100\37\50\48\86\55\34\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+
+
+--JAILBREAK TAB
+Jailbreak:NewButton("Get All Guns", "gives you all guns hacks"function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/marjoriex/jb-allg/main/main.lua", true))()
+end)
+Jailbreak:NewButton("Autorob", "jailbreak Autorob (AutoFarm)"function()
+  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5d4b0843f800d5dcac07568e18190b7e.lua%22))()
+end)
+Jailbreak:NewButton("EVO V4 Hub", "jailbreak hacking hub"function()
+  loadstring(game:HttpGet("https://projectevo.xyz/v4/script.lua", true))();
+end)
+Jailbreak:NewButton("SalazarHub", "jailbreak hacking hub"function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/xxSirLotte/Salazar/main/SalazarHub"))()
+end)
+Jailbreak:NewButton("Project Evo", "Supports PSX, JailBreak,Project Lazarus"function()
+  loadstring(game:HttpGet("https://projectevo.xyz/v4/script.lua", true))()
+end)
+Jailbreak:NewButton("MrPectableHub", "jailbreak hacking hub"function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/MrPectable/MrPectable/main/MrPectable.lua"))()
+end)
+
+
+
+--PET SIMULATOR X TAB
+PetSimX:NewButton("AutoCollect", "autocollects orbs and lootbags"function()
+  while task.wait() do
+for i,v in pairs(game:GetService("Workspace")["__THINGS"].Orbs:GetChildren()) do
+    v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+for i,v in pairs(game:GetService("Workspace")["__THINGS"].Lootbags:GetChildren()) do
+    v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+end)
+PetSimX:NewButton("SynapseHub", "Supports PSX, JailBreak,Project Lazarus"function()
+  loadstring(game:HttpGet("https://gamingresources.github.io/SynapseHub/PetSimX.lua"))()
+end)
+PetSimX:NewButton("Project Evo", "Supports PSX, JailBreak,Project Lazarus"function()
+  loadstring(game:HttpGet("https://projectevo.xyz/v4/script.lua", true))()
+end)
+PetSimX:NewButton("EgorikusaHub (TAG FAKER)", "custom petsimx tags (dev tag, admin tag etc.)"function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/EgorikusaHub/MyScripts/main/BetterPartnerTag.lua"))();
+end)
+
+
+
+
+--UNIVERSAL TAB
+Universal:NewButton("Darkdex V3", "latest darkdex", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
+Universal:NewButton("Infinite Yield", "FE admin EZ EZ", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
